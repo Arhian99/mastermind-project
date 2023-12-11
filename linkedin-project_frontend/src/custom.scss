@@ -1,0 +1,96 @@
+// this file is used to customize bootstrap's included scss
+
+// customizations to sass go here...
+// $theme-colors: ("info": tomato);
+//
+
+
+$utilities: map-merge(
+    $utilities,
+    (
+        "max-width": (
+            property: max-width,
+            class: mw,
+            values: (
+                25: 25%,
+                50: 50%,
+                75: 75%,
+                80: 80%,
+                100: 100%,
+                auto: auto
+            )
+        )
+    )
+);
+
+$utilities: map-merge(
+    $utilities,
+    (
+        "min-viewport-height": (
+            property: min-height,
+            class: min-vh,
+            values: (
+                20: 20vh,
+                50: 50vh,
+                60: 60vh,
+                80: 80vh,
+                90: 90vh,
+                100: 100vh
+            )
+        )
+    )
+);
+
+$utilities: map-merge(
+    $utilities, 
+    (
+        "viewport-width": (
+            property: width,
+            class: vw,
+            values: (
+                25: 25vw,
+                50: 50vw,
+                75: 75vw,
+                100: 100vw,
+            )
+        )
+    )
+);
+
+$utilities: map-merge(
+    $utilities,
+    (
+        "width": (
+            property: width,
+            class: w,
+            values: (
+                25: 25%,
+                50: 50%,
+                75: 75%,
+                80: 80%,
+                100: 100%,
+                auto: auto
+            )
+        )
+    )
+);
+
+$utilities: map-merge(
+    $utilities,
+    (
+        "height": (
+            property: height,
+            class: h,
+            values: (
+                25: 25%,
+                50: 50%,
+                75: 75%,
+                80: 80%,
+                100: 100%,
+                auto: auto
+            )
+        )
+    )
+);
+
+@import "~bootstrap/scss/bootstrap";
